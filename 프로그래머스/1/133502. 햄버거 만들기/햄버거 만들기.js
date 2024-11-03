@@ -9,6 +9,7 @@ function solution(ingredient) {
             answer++
         }
     }
+    console.log(stack)
     
     return answer;
 }

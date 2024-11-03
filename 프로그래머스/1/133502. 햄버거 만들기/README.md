@@ -1,10 +1,10 @@
 # [level 1] 햄버거 만들기 - 133502 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133502#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133502) 
 
 ### 성능 요약
 
-메모리: 97.6 MB, 시간: 285.35 ms
+메모리: 97.8 MB, 시간: 297.92 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 08월 13일 02:12:09
+2024년 11월 03일 11:53:56
 
 ### 문제 설명
 
