@@ -1,3 +1,3 @@
 function solution(n) {
-    return String(n).split('').map((item)=> Number(item)).reverse()
+   return String(n).split('').reverse().map(item=>Number(item))
 }
