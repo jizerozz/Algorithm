@@ -1,4 +1,3 @@
-function solution(arr)
-{    
-    return arr.filter((num, idx) => num!==arr[idx+1]) 
+function solution(arr){
+  return arr.filter((item, idx) => item !== arr[idx+1])
 }
