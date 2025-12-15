@@ -8,11 +8,11 @@ function solution(s) {
        
         if(idx !== -1){
             answer += 1
-            remainString.push(s.slice(0,idx+1))
+            //remainString.push(s.slice(0,idx+1))
             s = s.slice(idx+1)
         }else{
             answer+=1
-            remainString.push(s.slice(idx))
+            //remainString.push(s.slice(idx))
             break
         }
     }
@@ -29,7 +29,6 @@ function freqNum(words, freq){
         }
         
         if(freq[0] === freq[1]){
-            console.log(i)
             return i
         }
     }
