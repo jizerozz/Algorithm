@@ -7,14 +7,15 @@ function solution(N, stages) {
             cnt[stage] = (cnt[stage] || 0) + 1
         }
     }
+    console.log(cnt)
     
     let users = stages.length
     
     for(let i=1; i<=N; i++){
-        const fail = cnt[i] || 0
-        const failRate = users === 0 ? 0 : fail/users
+        const failMembers = cnt[i] || 0
+        const failRate = users === 0 ? 0 : failMembers/users
         answer.push({stage: i, rate: failRate})
-        users-=fail
+        users-=failMembers
     }
     
     answer.sort((a,b)=>b.rate-a.rate)
