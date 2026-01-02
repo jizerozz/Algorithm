@@ -2,6 +2,7 @@ function solution(number) {
     let answer = 0;
     
     function Combination(arr, start, depth, sum){
+        console.log(sum, "depth: ",depth)
         if(depth === 3){
             if(sum === 0){
                 answer++
