@@ -1,17 +1,17 @@
 function solution(participant, completion) {
-    let names = new Map()
+   let players = new Map()
+   
+   for(let p of participant){
+       players.set(p, (players.get(p) || 0) + 1)
+   }
     
-    for(let name of participant){
-        names = names.set(name, (names.get(name) | 0) + 1)
-    }
-    
-    for(let name of completion){
-        names = names.set(name, (names.get(name) | 0) - 1)
-    }
-    
-    
-    for(let [name, cnt] of names){
-        if(cnt > 0) return name
+    for(let c of completion){
+        players.set(c, (players.get(c) || 0) -1)
     }
 
+    for(let [k, v] of players){
+        if(v === 1){
+            return k
+        }
+    }
 }
