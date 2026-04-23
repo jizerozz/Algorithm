@@ -1,16 +1,16 @@
 function solution(s){
-   var answer = false
-   let stack = []
-   
-   for(let c of s){
-       if(c === '('){
-           stack.push(c)
-       }else{
-           if(stack.length === 0) return false
-           stack.pop()
-       }
-   }
-    return stack.length === 0
+    var answer = true;
+    let sum = 0
+    
+    for(let c of s){
+        c === '(' ? sum++ : sum--
+        
+        if(sum < 0){
+            answer = false
+        }
+    }
+    
+    if(sum !== 0) answer = false
+    
+    return answer;
 }
-// )()
-//)(
