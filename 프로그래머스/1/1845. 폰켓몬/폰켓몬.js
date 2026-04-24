@@ -1,15 +1,13 @@
 function solution(nums) {
     var answer = 0;
+    //폰켓몬 종류 수 저장할 객체
+    let hasPonketmons = {}
+    //N/2 마리
+    let ponketMonsNum = nums.length / 2
     
-    let get=nums.length/2; 
-    // 폰켓몬 종류 중복 제거
-    let ponketmon=nums.filter((num, idx)=>{ 
-        return nums.indexOf(num)===idx
-    });
+    for(let n of nums){
+        hasPonketmons[n] = (hasPonketmons[n] || 0 ) + 1
+    }
     
-    
-    //선택할 수 있는 폰켓몬 종류 개수의 최댓값
-    answer = ponketmon.length <= get ? ponketmon.length : get
-    
-    return answer;
+    return Math.min(ponketMonsNum, Object.keys(hasPonketmons).length)
 }
