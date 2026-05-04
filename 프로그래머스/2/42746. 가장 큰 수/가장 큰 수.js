@@ -1,5 +1,5 @@
 function solution(numbers) {
-    var answer = '';
-    answer = numbers.map(String).sort((a,b) => (b+a) - (a+b))
-    return answer[0] === "0" ? "0" : answer.join("")
+    let number = ''
+    number = numbers.map(String).sort((a,b) => (b+a) - (a+b))
+    return number[0] === "0" ? "0" : number.join("")
 }
