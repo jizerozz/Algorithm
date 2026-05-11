@@ -1,10 +1,13 @@
 function solution(x) {
-    var answer = true
-    const num = String(x)
+    var answer = true;
     let sum = 0
-    num.split('').forEach((item) => {
-        sum += Number(item)
+    
+    String(x).split('').forEach((n) => {
+        sum += Number(n)
     })
-    answer = num % sum === 0 ? true : false
-    return answer
+    
+    answer = x % sum === 0 ?  true :  false
+    
+    
+    return answer;
 }
