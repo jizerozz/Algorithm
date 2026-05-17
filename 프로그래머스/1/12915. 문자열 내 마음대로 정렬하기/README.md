@@ -1,10 +1,10 @@
 # [level 1] 문자열 내 마음대로 정렬하기 - 12915 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12915#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12915) 
 
 ### 성능 요약
 
-메모리: 33.6 MB, 시간: 0.16 ms
+메모리: 32.7 MB, 시간: 0.07 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 19일 11:29:39
+2026년 05월 17일 23:35:36
 
 ### 문제 설명
 
